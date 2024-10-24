@@ -1,0 +1,10 @@
+version: '3'
+services:
+  asterisk:
+    build:
+      context: .
+    image: noya-asterisk
+    volumes:
+      - ./configs:/etc/asterisk
+    network_mode: "host"
+    command: ["/usr/sbin/asterisk", "-fvvv"]
