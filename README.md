@@ -1,49 +1,22 @@
+# 
+         _         _         
+        / \       | |        
+       / _ \  ___| | ___ ___  
+      / ___ \| _ | |/ _ / _ \ 
+     /_/   \_\___|_|\__\___/ 
 
-# Proje Kurulumu ve Yapılandırma
+# DEBIAN - ASTERISK
 
-Bu ürün 16.x ve 17.x versiyonları için geliştirilmeye başlanmıştır. Güncel versiyonlar için çalışmalar devam etmektedir. Ayrıca *IAX protokolü* ile de sorunsuz çalışmaktadır. iax.conf dosyasını sisteminize göre düzenleyiniz
+Bu proje, Asterisk ile ilgili kurulum ve yapılandırma bilgilerini içermektedir. İlgili sürümlere yönelik adımları aşağıda bulabilirsiniz.
 
-## Kurulum Adımları
+## 1. 16.x ve 17.x Sürümler İçin
 
-İlk kurulum sırasında Docker Compose'u *--build* tag'i ile başlatmanız gerekmektedir:
+Aşağıdaki bağlantılara tıklayarak 16.x veya 17.x sürümleri için kurulum adımlarına erişebilirsiniz:
 
-```bash
-$ docker-compose up -d --build
-```
+- [16.x ve 17.x Sürümler İçin Kurulum ve Yapılandırma](17.x/README.md)
 
-Yapılandırma Dosyaları
+## 2. 21.x ve Üstü Sürümler İçin
 
-Projede tüm yapılandırma dosyaları configs klasörü içerisindedir. İç hat numaralarını tanımlamak için sip.conf ve extensions.conf dosyalarını düzenlemeniz yeterlidir.
+Aşağıdaki bağlantılara tıklayarak 21.x ve üstü sürümler için kurulum adımlarına erişebilirsiniz:
 
-sip.conf Örneği
-
-Aşağıda bir SIP numarası ekleme örneği verilmiştir:
-```
-[2222]
-type=friend
-secret=1234
-host=dynamic
-context=internal
-nat=no
-canreinvite=no
-disallow=all
-allow=ulaw
-allow=alaw
-allow=gsm
-dtmfmode=rfc2833
-callerid="2222"
-```
-extensions.conf Örneği
-
-SIP numarasının dahili çağrılarda nasıl çalışacağını tanımlamak için:
-```
-[internal]
-exten => 2222,1,Dial(SIP/2222)
-``
-Değişikliklerden Sonra Yeniden Başlatma
-
-Yapılandırma dosyalarında değişiklik yaptıktan sonra Docker Compose’u yeniden başlatmanız gerekmektedir. Aşağıdaki komutlarla önce kapatıp sonra tekrar başlatabilirsiniz:
-
-```bash
-$ docker-compose down ; docker-compose up -d
- ```
+- [21.x ve Üstü Sürümler İçin Kurulum ve Yapılandırma](21.x/README.md)
