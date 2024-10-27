@@ -1,7 +1,7 @@
 
 # Proje Kurulumu ve Yapılandırma
 
-Bu ürün 16.x ve 17.x versiyonları için geliştirilmeye başlanmıştır. Güncel versiyonlar için çalışmalar devam etmektedir. Ayrıca *IAX protokolü* ile de sorunsuz çalışmaktadır.
+Bu ürün 16.x ve 17.x versiyonları için geliştirilmeye başlanmıştır. Güncel versiyonlar için çalışmalar devam etmektedir. Ayrıca *IAX protokolü* ile de sorunsuz çalışmaktadır. iax.conf dosyasını sisteminize göre düzenleyiniz
 
 ## Kurulum Adımları
 

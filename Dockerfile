@@ -1,6 +1,6 @@
 FROM debian:stable-slim
 
-ENV ASTERISK_VERSION=17.0.0
+ENV ASTERISK_VERSION=16.8.0
 
 WORKDIR /src
 
