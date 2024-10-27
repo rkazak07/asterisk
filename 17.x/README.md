@@ -1,6 +1,6 @@
 # Proje Kurulumu ve Yapılandırma
 
-##NOT= Bu proje, **16.x**, **17.x** ve **21.x** sonrası versiyonlar için yapılandırma ve kurulum adımlarını içermektedir. Ayrıca, *IAX protokolü* ile de sorunsuz çalışmaktadır. Aşağıdaki adımları takip ederek sistemi kurabilirsiniz.
+NOT= Bu proje, **16.x**, **17.x** ve **21.x** sonrası versiyonlar için yapılandırma ve kurulum adımlarını içermektedir. Ayrıca, *IAX protokolü* ile de sorunsuz çalışmaktadır. Aşağıdaki adımları takip ederek sistemi kurabilirsiniz.
 
 ## 1. 16.x ve 17.x Versiyonları
 
@@ -11,7 +11,7 @@
 
    ```bash
    docker-compose up -d --build
-```
+
 
 ## 1.2. Yapılandırma Dosyaları
 Projede tüm yapılandırma dosyaları configs klasörü içerisindedir. İç hat numaralarını tanımlamak için sip.conf ve extensions.conf dosyalarını düzenlemeniz yeterlidir.
