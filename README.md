@@ -1,3 +1,4 @@
+```plaintext
 <div align="center">
 
                .$$$$$$$$$$$$$$$=..      
@@ -24,7 +25,7 @@ $$$$             $$$$7         .$$$.
 
 
 </div>
-
+```
 
 # DEBIAN - ASTERISK
 
