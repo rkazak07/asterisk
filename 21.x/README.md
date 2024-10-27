@@ -1,11 +1,11 @@
 # Proje Kurulumu ve Yapılandırma
+NOT= geolocation, aeap.conf, pjsp.conf, extension.conf, ari.conf, phoneprov.conf, cdr.conf dosyalarında kendi sisteminize göre düzenlemeler yapmanız gerekmektedir.
+Ayrıca, IAX protokolü ile de sorunsuz çalışmaktadır. iax.conf dosyasını sisteminize göre düzenleyiniz.
 
 ## 2. 21.x ve Üstü Versiyonlar
 ### 2.1. Kurulum Adımları
 21.x sonrası versiyonlar için aşağıdaki değişiklikleri uygulamanız gerekmektedir:
 
-NOT= geolocation, aeap.conf, pjsp.conf, extension.conf, ari.conf, phoneprov.conf, cdr.conf dosyalarında kendi sisteminize göre düzenlemeler yapmanız gerekmektedir.
-Ayrıca, IAX protokolü ile de sorunsuz çalışmaktadır. iax.conf dosyasını sisteminize göre düzenleyiniz.
 
 1. 21.x klasöründeki dosyaları kullanınız.
 2. İlk kurulum sırasında Docker Compose'u --build tag'i ile başlatmanız gerekmektedir:
