@@ -34,4 +34,24 @@ type=auth
 auth_type=userpass
 password=6001
 username=6001
+
+[6001]
+type=aor
+max_contacts=1
+```
+
+### 2.2.2. extensions.conf Örneği
+SIP numarasının dahili çağrılarda nasıl çalışacağını tanımlamak için:
+
+```
+[internal]
+exten => 6001,1,Dial(PJSIP/6001)
+```
+
+### 2.3. Değişikliklerden Sonra Yeniden Başlatma
+Yapılandırma dosyalarında değişiklik yaptıktan sonra Docker Compose’u yeniden başlatmanız gerekmektedir. Aşağıdaki komutlarla önce kapatıp sonra tekrar başlatabilirsiniz:
+
+```bash
+docker-compose down
+docker-compose up -d
 ```
