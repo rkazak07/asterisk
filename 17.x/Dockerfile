@@ -4,7 +4,7 @@ ENV ASTERISK_VERSION=17.0.0
 
 WORKDIR /src
 
-COPY configs/* /etc/asterisk/
+COPY configs/ /etc/asterisk/
 
 RUN apt-get update && \
     apt-get install -y git apt-utils curl file wget libnewt-dev libssl-dev libncurses5-dev libsqlite3-dev build-essential libjansson-dev libxml2-dev uuid-dev libedit-dev mpg123 ffmpeg subversion uuid-runtime \
