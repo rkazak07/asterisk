@@ -1,0 +1,13 @@
+version: '3'
+services:
+  asterisk:
+    build:
+      context: .
+    image: noya-asterisk
+    volumes:
+      - ./configs:/etc/asterisk
+    ports:
+      - 5060:5060/udp
+      - 5060:5060/tcp
+      - 10000-13000:10000-13000/udp
+    command: ["/usr/sbin/asterisk", "-fvvv"]
