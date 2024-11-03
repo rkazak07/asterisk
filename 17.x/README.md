@@ -12,6 +12,12 @@ NOT= Bu proje, **16.x**, **17.x** ve **21.x** sonrası versiyonlar için yapıla
    ```bash
    docker-compose up -d --build
 
+Windows için
+
+   ```bash
+   docker-compose -f docker-compose-windows.yaml up -d --build
+```
+
 
 ## 1.2. Yapılandırma Dosyaları
 Projede tüm yapılandırma dosyaları configs klasörü içerisindedir. İç hat numaralarını tanımlamak için sip.conf ve extensions.conf dosyalarını düzenlemeniz yeterlidir.
@@ -50,4 +56,12 @@ Yapılandırma dosyalarında değişiklik yaptıktan sonra Docker Compose’u ye
 ```bash
 docker-compose down
 docker-compose up -d
+```
+
+Windows için
+
+
+```bash
+docker-compose down
+docker-compose -f docker-compose-windows.yaml up -d
 ```
