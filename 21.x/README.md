@@ -1,5 +1,5 @@
 # Proje Kurulumu ve Yapılandırma
-NOT= geolocation, aeap.conf, pjsp.conf, extension.conf, ari.conf, phoneprov.conf, cdr.conf dosyalarında kendi sisteminize göre düzenlemeler yapmanız gerekmektedir.
+NOT= geolocation, aeap.conf, pjsp.conf, extension.conf, ari.conf, phoneprov.conf, cdr.conf dosyalarında kendi sisteminize ve ihtiyaçlara göre düzenlemeler yapmanız gerekmektedir.
 Ayrıca, IAX protokolü ile de sorunsuz çalışmaktadır. iax.conf dosyasını sisteminize göre düzenleyiniz.
 
 ## 2. 21.x ve Üstü Versiyonlar
