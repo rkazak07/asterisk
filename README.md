@@ -2,6 +2,7 @@
 # DEBIAN - ASTERISK
 
 Bu proje, Asterisk ile ilgili kurulum ve yapılandırma bilgilerini içermektedir. İlgili sürümlere yönelik adımları aşağıda bulabilirsiniz.
+NOT: Windows'da host network özelliği çalışmadığı için ayrı bir docker-compose dosyası kullanılmaktadır.
 
 ## 1. 16.x ve 17.x Sürümler İçin
 
