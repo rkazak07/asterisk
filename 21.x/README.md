@@ -14,6 +14,13 @@ Ayrıca, IAX protokolü ile de sorunsuz çalışmaktadır. iax.conf dosyasını 
 docker-compose up -d --build
 ```
 
+Windows için
+
+```bash
+docker-compose -f docker-compose-windows.yaml up -d --build
+```
+
+
 ## 2.2. Yapılandırma Dosyaları
 Projede tüm yapılandırma dosyaları configs klasörü içerisindedir. İç hat numaralarını tanımlamak için pjsip.conf ve extensions.conf dosyalarını düzenlemeniz yeterlidir.
 
@@ -54,4 +61,10 @@ Yapılandırma dosyalarında değişiklik yaptıktan sonra Docker Compose’u ye
 ```bash
 docker-compose down
 docker-compose up -d
+```
+Windows için
+
+```bash
+docker-compose down
+docker-compose -f docker-compose-windows.yaml up -d
 ```
