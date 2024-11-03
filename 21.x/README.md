@@ -68,3 +68,13 @@ Windows için
 docker-compose down
 docker-compose -f docker-compose-windows.yaml up -d
 ```
+### 2.3.1 Linux işletim sistemleri için pjsip.conf dosyasındaki [transport-udp] alanında host ip adresinin eklenmesi gerekmektedir. Aksi takdirde ses iletilmeyecektir
+
+[transport-udp]
+type = transport
+protocol = udp
+bind = 0.0.0.0
+local_net=host-ip-adresi/32
+external_media_address=host-ip-adresi
+external_signaling_address=host-ip-adresi
+external_signaling_port=5060
