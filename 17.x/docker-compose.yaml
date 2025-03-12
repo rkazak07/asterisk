@@ -3,7 +3,8 @@ services:
   asterisk:
     build:
       context: .
-    image: noya-asterisk
+    image: asterisk
+    container_name: asterisk
     volumes:
       - ./configs:/etc/asterisk
     network_mode: "host"
